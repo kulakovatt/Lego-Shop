@@ -1,0 +1,87 @@
+*{
+    font-family: "Cera Pro";
+}
+body{
+    background: #2d3436;
+}
+/* to order page */
+.to_order_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+    padding: 0 50px;
+}
+
+.title_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.title_panel p{
+    color: white;
+    font-size: 25px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: center;
+    width: 630px;
+    background-color: #F1EEEC;
+    padding: 50px 0;
+}
+.inputs p{
+    margin-top: 20px;
+    color: #3a3a3a;
+    width: 352px;
+    font-size: 16px;
+}
+.inputs div{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs .payment_method{
+    margin-top: 10px;
+    font-size: 14px;
+    width: 352px;
+    justify-content: start;
+    gap: 50px;
+}
+.inputs .payment_method div{
+    display: flex;
+    gap: 15px;
+}
+
+
+
+input[name="toorder"]{
+    background-color: #ffffff;
+    border: 2px solid #4cd137;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: #2d3436;
+    align-self: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+input[name="toorder"]:hover {
+    background-color: #4cd137;
+    color: white;
+    transition: 0.5s;
+}
+
+input[type="text"]{
+    width: 352px;
+    padding: 10px;
+    border: 1px solid #4cd137;
+    border-radius: 5px;
+    outline: none;
+}
+
+

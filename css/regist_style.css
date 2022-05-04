@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    background-color:#2d3436 ;
+}
+
+label {
+    color: #4cd137;
+    font-family: "Montserrat Medium";
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.titles_div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.lego_title {
+    text-align: center;
+    font-family: "Cera Pro";
+    color: #4cd137;
+    font-size: 55px;
+    font-weight: bold;
+}
+.reg{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat Medium";
+    font-size: 20px;
+
+}
+
+
+.regist {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.regist .form{
+    min-height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons_div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.regist a {
+    font-family: "Montserrat SemiBold";
+    color: #4cd137;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+.regist input[type="text"],input[type="password"] {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+.regist input[type="text"]:focus,input[type="password"]:focus{
+    background-color: white;
+}
+input[type="submit"]{
+    background-color: #2d3436;
+    border: 3px solid #4cd137;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-family: "Montserrat SemiBold";
+}
+input[type="submit"]:hover{
+    background-color: #4cd137;
+    color: white;
+}
+

@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #191b1c;
+    overflow-x: hidden;
+    font-family: "Cera Pro";
+}
+main{
+    display: flex;
+}
+.head_div{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 100px;
+}
+.container_hello{
+    display: flex;
+    padding: 70px 150px;
+    gap: 100px;
+}
+.button_back{
+    background: none;
+    border: none;
+    height: 20px;
+}
+.button_back a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration-line: none;
+}
+.button_back a:hover{
+    cursor: pointer;
+}
+.hello{
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: aliceblue;
+    display: inline-block;
+}
+.small_p{
+    font-weight: normal;
+    color: #797979;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.p_hello{
+    font-size: 30px;
+    padding: 20px;
+    padding-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.p_hello span{
+    text-transform: uppercase;
+}
+a {
+    color: #191b1c;
+    transition: 0.3s;
+    text-decoration-line: none;
+}
+a:hover {
+    color: #4cd137;
+    transition: 0.3s;
+}
+
+.container_buttons{
+    display: flex;
+    padding: 0 150px 30px 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_1 {
+    background-color: aliceblue;
+    border: none;
+    font-size: 18px;
+    font-family: "Cera Pro";
+    padding: 15px 30px;
+    min-width: 130px;
+    height: 53px;
+    border-radius: 5px;
+    color: #191b1c;
+    transition: 0.5s;
+}
+.edit_form{
+    background-color: aliceblue;
+    box-shadow: 4px 4px 5px #4cd137;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 -50px;
+    margin-bottom: 50px;
+}
+.label_m{
+    text-align: center;
+    font-size: 20px;
+    color: #191b1c;
+}
+.form {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form div{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+select{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 37px;
+    padding: 3px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
+    color: #797979;
+}
+.form input[type="submit"]{
+    background-color: #2d3436;
+    border: 2px solid #4cd137;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    align-self: center;
+}
+.form input[type="submit"]:hover {
+    background-color: #4cd137;
+    color: white;
+}
+
+/* Скрываем элемент <input type="file" /> */
+/*input[type="file"] {*/
+/*    display: none;*/
+/*}*/
+
+/* Собственно стилизируем кнопку в соответствии с нужным внешним видом */
+.custom-file-upload {
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.76);
+    font-size: 14px;
+    line-height: 37px;
+    color: #797979;
+}
+
+.catalog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px 30px 150px;
+}
+.catalog h2{
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.catalog .catalog_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.elem{
+    width: 300px;
+    height: 455px;
+    padding: 20px;
+    font-family: "Cera Pro";
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img {
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+.text_prod1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.text_prod3{
+    font-weight: bold;
+}
+
+input[id="fav"]{
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: url('../img/unfavorite.png') no-repeat;
+    background-size: cover;
+    color: transparent;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+.basket{
+    display: flex;
+    width: 100vw;
+    background-color: #797979;
+}
+.order{
+    display: flex;
+    width: 100vw;
+    background-color: #797979;
+}
+input[id="bask"]{
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: url('../img/add_basket.png') no-repeat;
+    background-size: cover;
+    color: transparent;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+
+.elem_bag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.elem_bag .img {
+    width: 150px;
+    object-fit: cover;
+    object-position: left top;
+}
+.elem_bag .col{
+    min-width: 200px;
+}
+.elem_bag .text_prod1{
+    min-width: 30px;
+    text-align: start;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+}
+.elem_bag .text_prod3{
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+ input[type="number"]{
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+ .delete_basket{
+     background: none;
+     background-image: url("../img/delete.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 29px;
+     height: 29px;
+     border: none;
+     outline: none;
+     color: transparent;
+     cursor: pointer;
+ }
+.delete_order{
+    background: none;
+    background-image: url("../img/delete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 29px;
+    height: 29px;
+    border: none;
+    outline: none;
+    color: transparent;
+    cursor: pointer;
+}
+
+.div_count{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100px;
+}
+.icon{
+    background: none;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.icon:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    width: 30px;
+    font-size: 16px;
+    background: none;
+    cursor: auto;
+    text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#form_fav{
+    margin: 0;
+}
+
+
+input[name="add_order"]{
+    background-color: #ffffff;
+    border: 2px solid #4cd137;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: #2d3436;
+    align-self: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+input[name="add_order"]:hover {
+    background-color: #4cd137;
+    color: white;
+    transition: 0.5s;
+}
+
